@@ -1,0 +1,106 @@
+.time-slider-h1 {
+  color: #42567A;
+}
+
+.slider-info-line {
+  
+}
+
+.outer-circle {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .inner-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center center; // Важно для вращения!
+  }  
+
+  .circle-item {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  .circle-number {
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: rotate(0deg) !important;
+  }
+
+  .selected {
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(53, 53, 54, 0.5);
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+  }
+
+  .circle-number:hover {
+    opacity: 1;
+  }
+
+  .circle-item:hover {
+    background-color: rgba(47, 49, 51, 0.2);
+    width: 50px;
+    height: 50px;
+  }
+  
+  .circle-item.selected .circle-number {
+    opacity: 1;
+  }
+  
+  .slider-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+        
+        .slider-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            
+            .slider-content-date {
+                font-size: 100px;
+                font-weight: bold;
+                width: 100%;
+                color: #333;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+}

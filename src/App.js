@@ -1,8 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.scss';
+import TimeSlider from './slider-component/time-slider.tsx';
 function App() {
-  return ();
+  return (
+    <TimeSlider />
+  );
 }
 
 export default App;
