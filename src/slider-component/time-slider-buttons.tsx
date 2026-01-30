@@ -1,12 +1,24 @@
 import React from "react";
-import { useSwiper } from "swiper/react";
 
-const TimeSliderButtons = () => {
-    const swiper = useSwiper()
+interface TimeSliderButtonsProps {
+    swiperRef: { current:any}; 
+}
+
+const TimeSliderButtons = ({ swiperRef }: TimeSliderButtonsProps) => {
     return(
         <div className="slider-buttons">
-            <button onClick={() => swiper.slidePrev()}>Prev</button>
-            <button onClick={() => swiper.slideNext()}>Next</button>
+            <button 
+                className="slider-button slider-button-prev" 
+                onClick={() => swiperRef.current?.swiper?.slidePrev()}
+            >
+                &lt;
+            </button>
+            <button 
+                className="slider-button slider-button-next" 
+                onClick={() => {swiperRef.current?.swiper?.slideNext()}}
+            >
+                &gt;
+            </button>
         </div>
     )
 }
