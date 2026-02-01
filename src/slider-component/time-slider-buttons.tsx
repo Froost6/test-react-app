@@ -9,13 +9,13 @@ const TimeSliderButtons = ({ swiperRef }: TimeSliderButtonsProps) => {
         <div className="slider-buttons">
             <button 
                 className="slider-button slider-button-prev" 
-                onClick={() => swiperRef.current?.swiper?.slidePrev()}
+                onClick={() => swiperRef.current?.slidePrev()}
             >
                 &lt;
             </button>
             <button 
                 className="slider-button slider-button-next" 
-                onClick={() => {swiperRef.current?.swiper?.slideNext()}}
+                onClick={() => {swiperRef.current?.slideNext()}}
             >
                 &gt;
             </button>

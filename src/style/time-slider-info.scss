@@ -1,0 +1,110 @@
+.slider-info-nav {
+    margin: 2.78vh 3.47vw; 
+    width: 34.72vw; 
+    max-width: 500px;
+    padding-left: 1.39vw;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    border-left: 0.28vw solid transparent;
+    border-image: linear-gradient(180deg, $iris 0%, $fuscha 100%) 1;
+  }
+  
+  .time-slider-h1 {
+    color: #42567A;
+    font-size: 3.89vw; 
+    font-size: clamp(40px, 3.89vw, 56px); 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider-container-main {
+    position: absolute;
+    top: 75vh;
+    margin-left: 17.36vw; 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 4.17vw; 
+    max-width: 60px;
+    z-index: 10;
+  }
+  
+  .slider-conteiner-buttons-main {  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .slider-button-main {
+    width: 2.78vw;
+    height: 2.78vw;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.67vw; 
+    font-size: clamp(18px, 1.67vw, 24px);
+  }
+  
+  .slider-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .slider-button-prev-main {
+    margin-right: 0.69vw; 
+  }
+  
+  .slider-button-next-main {
+    margin-left: 0.69vw;
+  }
+  
+  .slider-button-main:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .slider-container-wrapper {
+    position: relative; 
+    padding: 0 4.17vw; 
+  }
+  
+  .wrapper-time-slider-events {
+    position: relative;
+    padding: 1.39vw; 
+  }
+  
+  .time-slider-events {
+    width: 100%;
+    position: relative;
+    top: -11.11vh;
+  }
+  
+  .time-slider-events-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .time-slider-events-header {
+    color: $blue;
+  }
+  
+  .time-slider-events-content {
+    color: $black_blue;
+  }
